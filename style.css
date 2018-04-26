@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(assets/background.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+img {
+    opacity: 0.2
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+h1 {
+    padding: 30px 0 20px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #303030;
+}
+
+.right-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.left-content {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    align-items: center;
+}
+
+.sign-in-checkarea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-button > button {
+ width: 150px;
+}
+
+.btn-small {
+    width: 40%;
+}
+
+.form-size {
+    width: 90%;
+    text-align: center;
+
+}
+
+.form {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 5px;
+    display: flex;
+}
+
+.content {
+    background-color: rgb(246, 246, 246);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.content input[type=text] {
+    background: url(assets/user.png) no-repeat 15px;
+}
+
+.content input[type=password] {
+    background: url(assets/lock.png) no-repeat 15px;
+}
+
+.content input[type=email] {
+    background: url(assets/email.png) no-repeat 15px;
+}
+
+.content input[type=location] {
+    background: url(assets/location.png) no-repeat 15px;
+}
+
+.content input[type=tel] {
+    background: url(assets/phone.png) no-repeat 15px;
+}
+.double-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.btn-danger {
+    border: 1px solid red !important;
+    background: #f76e7e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f76e7e), to(#f03747));
+    background: -o-linear-gradient(top, #f76e7e 0%, #f03747 100%);
+    background: linear-gradient(to bottom, #f76e7e 0%, #f03747 100%);
+} 
+
+.disabled:hover {
+    cursor: not-allowed !important;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.double-buttons > button {
+    width: 44%;
+}
+
+input:not([type=checkbox]) {
+    display: block;
+    padding: 10px 10px 10px 50px;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #bfb9b9;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+::placeholder {
+  color: #bfb9b9;
+}
+
+.checkbox {
+    letter-spacing: 0.8px;
+    color: #bfb9b9;
+}
+
+.checkbox input {
+    position: relative;
+    z-index: -9999;
+}
+
+.sign-in-checkbox {
+    width: 50%;
+}
+
+.checkbox span {
+    position: relative;
+    bottom: 24px;
+    width: 25px;
+    height: 30px;
+    display: block;
+    background: url(assets/unchecked.png) no-repeat;
+}
+
+.checkbox input:checked + span {
+    background: url(assets/all.png) no-repeat;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+.btn {
+    display: block;
+    font-size: 1.2em;
+    padding: 11px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #303030;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-submit {
+    background: -webkit-linear-gradient(#addb54 0%, #7fc320 100%);
+    background: -o-linear-gradient(#addb54 0%, #7fc320 100%);
+    background: linear-gradient(#addb54 0%, #7fc320 100%);
+    border: 1px solid green;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    border: 1px solid #bfb9b9;
+    padding: 10px 50px 10px 10px;
+    line-height: 1.2;
+    font-size: 1.17em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left-content {
+        width: 100%;
+    }
+    
+    .right-content {
+        width: 100%;
+    }
+}
